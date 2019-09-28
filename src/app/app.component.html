@@ -5,6 +5,10 @@
     </div>
     <div class="py-3 col-md-12 align-bottom">
       <app-display-input myInput="{{ myInput }}"></app-display-input>
+
+      <button data-id="Start" class="btn btn-success ml-3 mr-2" (click)="onClickStart()">Start</button>
+      <button data-id="Stop" class="btn btn-danger mr-2" (click)="stop()">Stop</button>
+      <button data-id="Reset" class="btn btn-secondary mr-2" (click)="reset()">Reset</button>
     </div>
   </div>
 </div>
