@@ -1,0 +1,10 @@
+<div class="col-md-12 mt-5">
+  <label>First Component: </label>
+  <label
+    data-id="myInput"
+    class="border ml-1 px-3 py-2"
+    [ngClass]="myInput > 0 ? 'border-primary text-primary' : 'border-danger text-danger'"
+  >
+    {{ myInput }}
+  </label>
+</div>

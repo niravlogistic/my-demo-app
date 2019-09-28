@@ -7,14 +7,18 @@ import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { FormsModule } from '@angular/forms';
+import { DisplayInputComponent } from './display-input/display-input.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DisplayInputComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     StoreModule.forRoot(reducers, {
       metaReducers,
       runtimeChecks: {
